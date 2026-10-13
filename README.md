@@ -1,2 +1,0 @@
-# LipzyScriptHub
-Steal an egg
