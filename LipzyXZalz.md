@@ -4,7 +4,6 @@ local UserInputService = game:GetService("UserInputService")
 local MarketplaceService = game:GetService("MarketplaceService")
 local RunService = game:GetService("RunService")
 local Stats = game:GetService("Stats")
-
 local LocalPlayer = Players.LocalPlayer
 
 local AdminList = {
@@ -14,54 +13,7 @@ local AdminList = {
 
 local _0x8F2A = (function()
     local _0x1B = string.char
-    local _0x2C = {
-        80, 82, 69, 77, 73, 85, 77, 45, 53, 53, 48, 55, 45, 57, 52, 68, 49, 45, 53, 68, 68, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 67, 54, 55, 45, 51, 67, 51, 49, 45, 49, 57, 68, 53, 124, 80, 82, 69, 77,
-        73, 85, 77, 45, 67, 50, 56, 49, 45, 50, 53, 56, 65, 45, 67, 50, 48, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 53, 50, 48, 45, 51, 67, 67, 49, 45, 53, 54, 68, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45,
-        68, 56, 51, 49, 45, 55, 53, 70, 57, 45, 69, 57, 70, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 50, 50, 65, 45, 53, 51, 69, 66, 45, 66, 52, 54, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 53, 57, 49,
-        45, 54, 67, 52, 52, 45, 65, 65, 49, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 68, 66, 54, 45, 54, 69, 54, 49, 45, 51, 68, 67, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 54, 65, 56, 45, 56, 56, 65,
-        54, 45, 49, 66, 70, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 70, 54, 57, 45, 55, 54, 57, 65, 45, 57, 50, 49, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 66, 69, 65, 48, 45, 57, 69, 69, 48, 45, 52, 51,
-        52, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 48, 51, 55, 45, 48, 51, 55, 67, 45, 52, 67, 67, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 65, 69, 55, 45, 56, 56, 51, 55, 45, 49, 49, 53, 55, 124, 80,
-        82, 69, 77, 73, 85, 77, 45, 68, 67, 53, 68, 45, 70, 50, 68, 52, 45, 48, 55, 67, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 65, 49, 65, 45, 52, 51, 56, 68, 45, 67, 51, 70, 54, 124, 80, 82, 69, 77, 73,
-        85, 77, 45, 49, 49, 50, 50, 45, 50, 67, 56, 52, 45, 65, 67, 66, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 68, 51, 70, 45, 54, 68, 48, 57, 45, 70, 56, 68, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70,
-        52, 69, 56, 45, 50, 56, 49, 51, 45, 49, 48, 50, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 69, 55, 49, 45, 50, 65, 53, 67, 45, 55, 70, 48, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 55, 66, 55, 45,
-        65, 49, 68, 70, 45, 69, 68, 50, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 53, 70, 66, 45, 65, 57, 53, 51, 45, 55, 50, 67, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 48, 48, 70, 45, 66, 50, 67, 68,
-        45, 52, 53, 57, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 52, 51, 67, 45, 51, 51, 69, 52, 45, 51, 67, 52, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 54, 68, 56, 45, 68, 53, 70, 53, 45, 49, 48, 66,
-        66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 67, 50, 55, 45, 70, 48, 68, 66, 45, 56, 56, 55, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 55, 53, 66, 45, 56, 57, 49, 70, 45, 56, 65, 70, 52, 124, 80, 82,
-        69, 77, 73, 85, 77, 45, 56, 55, 56, 52, 45, 55, 54, 70, 70, 45, 56, 53, 55, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 69, 53, 70, 45, 69, 54, 50, 48, 45, 50, 51, 65, 51, 124, 80, 82, 69, 77, 73, 85,
-        77, 45, 68, 49, 69, 67, 45, 56, 67, 52, 51, 45, 48, 49, 65, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 67, 53, 67, 45, 67, 55, 56, 65, 45, 53, 48, 56, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 65,
-        50, 53, 45, 70, 69, 52, 65, 45, 70, 51, 68, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 69, 65, 67, 45, 57, 50, 69, 52, 45, 55, 70, 68, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 68, 55, 65, 45, 48,
-        69, 50, 51, 45, 48, 68, 65, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 67, 52, 56, 45, 66, 51, 70, 67, 45, 66, 54, 49, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 57, 69, 48, 45, 65, 67, 55, 66, 45,
-        54, 70, 50, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 52, 57, 69, 45, 56, 50, 49, 52, 45, 68, 69, 54, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 69, 65, 48, 45, 65, 55, 54, 50, 45, 68, 56, 68, 52,
-        124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 55, 55, 49, 45, 57, 68, 48, 66, 45, 48, 57, 55, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 57, 53, 69, 45, 50, 57, 54, 67, 45, 48, 67, 49, 67, 124, 80, 82, 69,
-        77, 73, 85, 77, 45, 65, 54, 56, 48, 45, 53, 50, 52, 50, 45, 67, 70, 48, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 52, 54, 66, 45, 55, 68, 55, 70, 45, 56, 48, 69, 70, 124, 80, 82, 69, 77, 73, 85, 77,
-        45, 52, 56, 53, 69, 45, 65, 68, 67, 52, 45, 56, 50, 57, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 65, 69, 70, 45, 70, 68, 68, 48, 45, 49, 51, 69, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 51, 56,
-        58, 45, 65, 49, 57, 56, 45, 54, 65, 52, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 55, 56, 55, 45, 69, 55, 68, 70, 45, 54, 53, 54, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 69, 53, 69, 45, 57, 70,
-        66, 57, 45, 55, 52, 69, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 68, 66, 55, 45, 67, 49, 56, 56, 45, 54, 69, 55, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 70, 67, 51, 45, 68, 55, 49, 51, 45, 66,
-        56, 70, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 54, 52, 69, 45, 51, 57, 50, 68, 45, 68, 51, 51, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 53, 52, 48, 45, 52, 67, 69, 56, 45, 49, 57, 69, 70, 124,
-        80, 82, 69, 77, 73, 85, 77, 45, 50, 50, 66, 55, 45, 53, 55, 56, 53, 45, 51, 55, 48, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 55, 65, 54, 45, 53, 68, 68, 49, 45, 57, 50, 56, 48, 124, 80, 82, 69, 77,
-        73, 85, 77, 45, 50, 67, 48, 48, 45, 52, 65, 53, 52, 45, 65, 54, 57, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 66, 48, 54, 45, 68, 70, 67, 49, 45, 52, 49, 51, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45,
-        70, 54, 53, 65, 45, 50, 49, 67, 56, 45, 65, 56, 49, 48, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 70, 51, 70, 45, 57, 51, 55, 68, 45, 68, 51, 55, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 51, 51, 54,
-        45, 68, 67, 56, 66, 45, 65, 49, 69, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 52, 67, 52, 45, 49, 48, 67, 48, 45, 66, 54, 70, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 57, 67, 66, 45, 54, 56, 69,
-        54, 45, 56, 53, 66, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 53, 65, 67, 45, 49, 67, 56, 55, 45, 50, 55, 51, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 69, 53, 57, 45, 52, 49, 52, 69, 45, 54, 53,
-        68, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 65, 52, 68, 45, 56, 57, 51, 52, 45, 55, 67, 51, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 55, 68, 70, 45, 49, 70, 67, 53, 45, 55, 65, 68, 68, 124, 80,
-        82, 69, 77, 73, 85, 77, 45, 51, 52, 53, 67, 45, 53, 52, 54, 67, 45, 66, 68, 49, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 51, 54, 66, 45, 69, 57, 50, 53, 45, 67, 57, 55, 66, 124, 80, 82, 69, 77, 73,
-        85, 77, 45, 49, 70, 51, 70, 45, 51, 50, 69, 70, 45, 66, 49, 54, 48, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 56, 65, 48, 45, 53, 48, 55, 55, 45, 57, 65, 66, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55,
-        56, 53, 56, 45, 65, 50, 56, 68, 45, 51, 52, 70, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 52, 67, 53, 45, 50, 52, 69, 68, 45, 51, 53, 53, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 56, 66, 53, 45,
-        70, 49, 49, 57, 45, 50, 67, 68, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 69, 67, 49, 45, 53, 56, 54, 48, 45, 51, 50, 68, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 54, 68, 68, 45, 67, 57, 66, 67,
-        45, 53, 69, 67, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 53, 54, 66, 45, 50, 70, 57, 50, 45, 67, 54, 53, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 55, 51, 67, 45, 55, 49, 69, 67, 45, 48, 65, 50,
-        67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 55, 68, 49, 45, 53, 51, 51, 66, 45, 49, 57, 56, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 70, 53, 48, 45, 69, 70, 68, 56, 45, 50, 57, 50, 68, 124, 80, 82,
-        69, 77, 73, 85, 77, 45, 48, 69, 70, 54, 45, 56, 57, 54, 68, 45, 69, 69, 50, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 50, 68, 69, 45, 70, 57, 67, 52, 45, 53, 56, 67, 50, 124, 80, 82, 69, 77, 73, 85,
-        77, 45, 48, 69, 53, 70, 45, 68, 65, 51, 65, 45, 66, 68, 57, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 67, 67, 65, 45, 57, 51, 56, 57, 45, 69, 57, 57, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 49,
-        68, 68, 45, 57, 51, 55, 54, 45, 53, 54, 49, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 68, 51, 48, 45, 68, 49, 56, 70, 45, 51, 51, 55, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 70, 49, 56, 45, 70,
-        57, 50, 70, 45, 49, 54, 48, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 54, 66, 49, 45, 51, 68, 68, 69, 45, 68, 65, 70, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 68, 54, 66, 45, 66, 52, 52, 51, 45,
-        54, 55, 57, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 65, 52, 52, 45, 48, 55, 48, 65, 45, 52, 67, 51, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 57, 50, 67, 45, 50, 50, 69, 70, 45, 69, 53, 66, 54,
-        124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 51, 48, 65, 45, 49, 50, 50, 65, 45, 49, 67, 65, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 54, 53, 56, 45, 54, 56, 48, 55, 45, 52, 68, 68, 55, 124, 80, 82, 69,
-        77, 73, 85, 77, 45, 57, 54, 69, 67, 45, 53, 52, 48, 48, 45, 66, 52, 69, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 66, 56, 56, 45, 57, 55, 57, 66, 45, 66, 69, 70, 57, 124, 80, 82, 69, 77, 73, 85, 77,
-        45, 49, 57, 49, 50, 45, 67, 53, 57, 55, 45, 56, 56, 55, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 67, 53, 68, 45, 55, 54, 53, 52, 45, 68, 69, 66, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 49, 57,
-        55, 45, 69, 52, 67, 67, 45, 49, 69, 48, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 49, 50, 67, 45, 50, 48, 65, 55, 45, 56, 52, 67, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 53, 68, 53, 45, 66, 67,
-        53, 50, 45, 56, 53, 48, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 69, 55, 70, 45, 69, 53, 54, 52, 45, 50, 53, 69, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 70, 66, 57, 45, 69, 51, 57, 68, 45, 68,
-        52, 56, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 68, 66, 55, 45, 51, 65, 53, 51, 45, 56, 57, 70, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 56, 66, 48, 45, 49, 67, 50, 66, 45, 49, 53, 69, 65
-    }
+    local _0x2C = { 80, 82, 69, 77, 73, 85, 77, 45, 53, 53, 48, 55, 45, 57, 52, 68, 49, 45, 53, 68, 68, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 67, 54, 55, 45, 51, 67, 51, 49, 45, 49, 57, 68, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 50, 56, 49, 45, 50, 53, 58, 65, 45, 67, 50, 48, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 53, 50, 48, 45, 51, 67, 67, 49, 45, 53, 54, 68, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 56, 51, 49, 45, 55, 53, 70, 57, 45, 69, 57, 70, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 50, 50, 65, 45, 53, 51, 69, 66, 45, 66, 52, 54, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 53, 57, 49, 45, 54, 67, 52, 52, 45, 65, 65, 49, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 68, 66, 54, 45, 54, 69, 54, 49, 45, 51, 68, 67, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 54, 65, 56, 45, 56, 56, 65, 54, 45, 49, 66, 70, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 70, 54, 57, 45, 55, 54, 57, 65, 45, 57, 50, 49, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 66, 69, 65, 48, 45, 57, 69, 69, 48, 45, 52, 51, 52, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 48, 51, 55, 45, 48, 51, 55, 67, 45, 52, 67, 67, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 65, 69, 55, 45, 56, 56, 51, 55, 45, 49, 49, 53, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 67, 53, 68, 45, 70, 50, 68, 52, 45, 48, 55, 67, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 65, 49, 65, 45, 52, 51, 56, 68, 45, 67, 51, 70, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 49, 50, 50, 45, 50, 67, 56, 52, 45, 65, 67, 66, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 68, 51, 70, 45, 54, 68, 48, 57, 45, 70, 56, 68, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 52, 69, 56, 45, 50, 56, 49, 51, 45, 49, 48, 50, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 69, 55, 49, 45, 50, 65, 53, 67, 45, 55, 70, 48, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 55, 66, 55, 45, 65, 49, 68, 70, 45, 69, 68, 50, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 53, 70, 66, 45, 65, 57, 53, 51, 45, 55, 50, 67, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 48, 48, 70, 45, 66, 50, 67, 68, 45, 52, 53, 57, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 52, 51, 67, 45, 51, 51, 69, 52, 45, 51, 67, 52, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 54, 68, 56, 45, 68, 53, 70, 53, 45, 49, 48, 66, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 67, 50, 55, 45, 70, 48, 68, 66, 45, 56, 56, 55, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 55, 53, 66, 45, 56, 57, 49, 70, 45, 56, 65, 70, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 55, 56, 52, 45, 55, 54, 70, 70, 45, 56, 53, 55, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 69, 53, 70, 45, 69, 54, 50, 48, 45, 50, 51, 65, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 49, 69, 67, 45, 56, 67, 52, 51, 45, 48, 49, 65, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 67, 53, 67, 45, 67, 55, 56, 65, 45, 53, 48, 56, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 65, 50, 53, 45, 70, 69, 52, 65, 45, 70, 51, 68, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 69, 65, 67, 45, 57, 50, 69, 52, 45, 55, 70, 68, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 68, 55, 65, 45, 48, 69, 50, 51, 45, 48, 68, 65, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 67, 52, 56, 45, 66, 51, 70, 67, 45, 66, 54, 49, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 57, 69, 48, 45, 65, 67, 55, 66, 45, 54, 70, 50, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 52, 57, 69, 45, 56, 50, 49, 52, 45, 68, 69, 54, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 69, 65, 48, 45, 65, 55, 54, 50, 45, 68, 56, 68, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 55, 55, 49, 45, 57, 68, 48, 66, 45, 48, 57, 55, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 57, 53, 69, 45, 50, 57, 54, 67, 45, 48, 67, 49, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 54, 56, 48, 45, 53, 50, 52, 50, 45, 67, 70, 48, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 52, 54, 66, 45, 55, 68, 55, 70, 45, 56, 48, 69, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 56, 53, 69, 45, 65, 68, 67, 52, 45, 56, 50, 57, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 65, 69, 70, 45, 70, 68, 68, 48, 45, 49, 51, 69, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 51, 56, 58, 45, 65, 49, 57, 56, 45, 54, 65, 52, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 55, 56, 55, 45, 69, 55, 68, 70, 45, 54, 53, 54, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 69, 53, 69, 45, 57, 70, 66, 57, 45, 55, 52, 69, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 68, 66, 55, 45, 67, 49, 56, 56, 45, 54, 69, 55, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 70, 67, 51, 45, 68, 55, 49, 51, 45, 66, 56, 70, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 54, 52, 69, 45, 51, 57, 50, 68, 45, 68, 51, 51, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 53, 52, 48, 45, 52, 67, 69, 56, 45, 49, 57, 69, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 50, 66, 55, 45, 53, 55, 56, 53, 45, 51, 55, 48, 52, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 55, 65, 54, 45, 53, 68, 68, 49, 45, 57, 50, 56, 48, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 67, 48, 48, 45, 52, 65, 53, 52, 45, 65, 54, 57, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 66, 48, 54, 45, 68, 70, 67, 49, 45, 52, 49, 51, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 54, 53, 65, 45, 50, 49, 67, 56, 45, 65, 56, 49, 48, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 70, 51, 70, 45, 57, 51, 55, 68, 45, 68, 51, 55, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 51, 51, 54, 45, 68, 67, 56, 66, 45, 65, 49, 69, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 52, 67, 52, 45, 49, 48, 67, 48, 45, 66, 54, 70, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 57, 67, 66, 45, 54, 56, 69, 54, 45, 56, 53, 66, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 68, 53, 65, 67, 45, 49, 67, 56, 55, 45, 50, 55, 51, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 69, 53, 57, 45, 52, 49, 52, 69, 45, 54, 53, 68, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 65, 52, 68, 45, 56, 57, 51, 52, 45, 55, 67, 51, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 55, 68, 70, 45, 49, 70, 67, 53, 45, 55, 65, 68, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 52, 53, 67, 45, 53, 52, 54, 67, 45, 66, 68, 49, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 51, 54, 66, 45, 69, 57, 50, 53, 45, 67, 57, 55, 66, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 70, 51, 70, 45, 51, 50, 69, 70, 45, 66, 49, 54, 48, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 56, 65, 48, 45, 53, 48, 55, 55, 45, 57, 65, 66, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 56, 53, 56, 45, 65, 50, 56, 68, 45, 51, 52, 70, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 52, 67, 53, 45, 50, 52, 69, 68, 45, 51, 53, 53, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 67, 56, 66, 53, 45, 70, 49, 49, 57, 45, 50, 67, 68, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 69, 67, 49, 45, 53, 56, 54, 48, 45, 51, 50, 68, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 69, 54, 68, 68, 45, 67, 57, 66, 67, 45, 53, 69, 67, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 51, 53, 54, 66, 45, 50, 70, 57, 50, 45, 67, 54, 53, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 50, 55, 51, 67, 45, 55, 49, 69, 67, 45, 48, 65, 50, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 55, 68, 49, 45, 53, 51, 51, 66, 45, 49, 57, 56, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 70, 53, 48, 45, 69, 70, 68, 56, 45, 50, 57, 50, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 69, 70, 54, 45, 56, 57, 54, 68, 45, 69, 69, 50, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 50, 68, 69, 45, 70, 57, 67, 52, 45, 53, 56, 67, 50, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 69, 53, 70, 45, 68, 65, 51, 65, 45, 66, 68, 57, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 67, 67, 65, 45, 57, 51, 56, 57, 45, 69, 57, 57, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 49, 68, 68, 45, 57, 51, 55, 54, 45, 53, 54, 49, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 68, 51, 48, 45, 68, 49, 56, 70, 45, 51, 51, 55, 65, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 70, 49, 56, 45, 70, 57, 50, 70, 45, 49, 54, 48, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 54, 66, 49, 45, 51, 68, 68, 69, 45, 68, 65, 70, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 55, 68, 54, 66, 45, 66, 52, 52, 51, 45, 54, 55, 57, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 65, 52, 52, 45, 48, 55, 48, 65, 45, 52, 67, 51, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 57, 50, 67, 45, 50, 50, 69, 70, 45, 69, 53, 66, 54, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 51, 48, 65, 45, 49, 50, 50, 65, 45, 49, 67, 65, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 54, 54, 53, 56, 45, 54, 56, 48, 55, 45, 52, 68, 68, 55, 124, 80, 82, 69, 77, 73, 85, 77, 45, 57, 54, 69, 67, 45, 53, 52, 48, 48, 45, 66, 52, 69, 51, 124, 80, 82, 69, 77, 73, 85, 77, 45, 48, 66, 56, 56, 45, 57, 55, 57, 66, 45, 66, 69, 70, 57, 124, 80, 82, 69, 77, 73, 85, 77, 45, 49, 57, 49, 50, 45, 67, 53, 57, 55, 45, 56, 56, 55, 68, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 67, 53, 68, 45, 55, 54, 53, 52, 45, 68, 69, 66, 53, 124, 80, 82, 69, 77, 73, 85, 77, 45, 52, 49, 57, 55, 45, 69, 52, 67, 67, 45, 49, 69, 48, 69, 124, 80, 82, 69, 77, 73, 85, 77, 45, 65, 49, 50, 67, 45, 50, 48, 65, 55, 45, 56, 52, 67, 67, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 53, 68, 53, 45, 66, 67, 53, 50, 45, 56, 53, 48, 56, 124, 80, 82, 69, 77, 73, 85, 77, 45, 56, 69, 55, 70, 45, 69, 53, 54, 52, 45, 50, 53, 69, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 70, 66, 57, 45, 69, 51, 57, 68, 45, 68, 52, 56, 70, 124, 80, 82, 69, 77, 73, 85, 77, 45, 53, 68, 66, 55, 45, 51, 65, 53, 51, 45, 56, 57, 70, 49, 124, 80, 82, 69, 77, 73, 85, 77, 45, 70, 56, 66, 48, 45, 49, 67, 50, 66, 45, 49, 53, 69, 65 }
     local _0x3D = ""
     for _0x4E = 1, #_0x2C do
         _0x3D = _0x3D .. _0x1B(_0x2C[_0x4E])
@@ -72,8 +24,8 @@ local _0x8F2A = (function()
     end
     return _0x5F
 end)()
-local validCodes = _0x8F2A
 
+local validCodes = _0x8F2A
 local UsedCodesFile = "LipzyHub_UsedCodes.txt"
 local usedCodes = {}
 
@@ -108,7 +60,9 @@ local userRole = AdminList[LocalPlayer.Name]
 if userRole ~= nil then
     isAdmin = true
     isPremium = true
-    pcall(function() writefile(SaveFile, "PREMIUM") end)
+    pcall(function()
+        writefile(SaveFile, "PREMIUM")
+    end)
 end
 
 if game.CoreGui:FindFirstChild("StealAnEggGUI") then
@@ -218,19 +172,19 @@ local function CreateTab(name, layoutOrder)
     TabBtn.TextSize = 11
     TabBtn.LayoutOrder = layoutOrder
     TabBtn.Parent = Sidebar
-
+    
     local BtnCorner = Instance.new("UICorner")
     BtnCorner.CornerRadius = UDim.new(0, 6)
     BtnCorner.Parent = TabBtn
-
+    
     local Page = Instance.new("Frame")
     Page.Size = UDim2.new(1, 0, 1, 0)
     Page.BackgroundTransparency = 1
     Page.Visible = (layoutOrder == 1)
     Page.Parent = ContentContainer
-
+    
     Pages[name] = {Button = TabBtn, Page = Page}
-
+    
     TabBtn.MouseButton1Click:Connect(function()
         for _, tabData in pairs(Pages) do
             tabData.Page.Visible = false
@@ -239,7 +193,7 @@ local function CreateTab(name, layoutOrder)
         Page.Visible = true
         TabBtn.BackgroundColor3 = Color3.fromRGB(120, 40, 190)
     end)
-
+    
     return Page
 end
 
@@ -258,18 +212,18 @@ local function PopulateAdminPage(page)
     for _, child in ipairs(page:GetChildren()) do
         child:Destroy()
     end
-
+    
     local MessageFrame = Instance.new("Frame")
     MessageFrame.Size = UDim2.new(1, -20, 0, 100)
     MessageFrame.Position = UDim2.new(0, 10, 0, 40)
     MessageFrame.BackgroundColor3 = Color3.fromRGB(35, 20, 55)
     MessageFrame.BorderSizePixel = 0
     MessageFrame.Parent = page
-
+    
     local MessageCorner = Instance.new("UICorner")
     MessageCorner.CornerRadius = UDim.new(0, 8)
     MessageCorner.Parent = MessageFrame
-
+    
     local MessageBox = Instance.new("TextBox")
     MessageBox.Size = UDim2.new(1, -20, 0, 40)
     MessageBox.Position = UDim2.new(0, 10, 0, 10)
@@ -280,11 +234,11 @@ local function PopulateAdminPage(page)
     MessageBox.TextSize = 14
     MessageBox.ClearTextOnFocus = true
     MessageBox.Parent = MessageFrame
-
+    
     local MessageCorner2 = Instance.new("UICorner")
     MessageCorner2.CornerRadius = UDim.new(0, 6)
     MessageCorner2.Parent = MessageBox
-
+    
     local SendAdminBtn = Instance.new("TextButton")
     SendAdminBtn.Size = UDim2.new(1, -20, 0, 35)
     SendAdminBtn.Position = UDim2.new(0, 10, 1, -45)
@@ -294,52 +248,52 @@ local function PopulateAdminPage(page)
     SendAdminBtn.Font = Enum.Font.GothamBold
     SendAdminBtn.TextSize = 14
     SendAdminBtn.Parent = MessageFrame
-
+    
     local SendCorner = Instance.new("UICorner")
     SendCorner.CornerRadius = UDim.new(0, 6)
     SendCorner.Parent = SendAdminBtn
-
+    
     SendAdminBtn.MouseButton1Click:Connect(function()
         local message = MessageBox.Text
         if message == "" or message == "MESSAGE.." then return end
-
+        
         local NotifGui = Instance.new("ScreenGui")
         NotifGui.Name = "LipzyNotification"
         NotifGui.Parent = game.CoreGui
         NotifGui.IgnoreGuiInset = true
-
+        
         local NotifFrame = Instance.new("Frame")
         NotifFrame.Size = UDim2.new(0, 500, 0, 100)
         NotifFrame.Position = UDim2.new(0.5, -250, 0, -150)
         NotifFrame.BackgroundColor3 = Color3.fromRGB(30, 18, 48)
         NotifFrame.BorderSizePixel = 0
         NotifFrame.Parent = NotifGui
-
+        
         local NotifCorner = Instance.new("UICorner")
         NotifCorner.CornerRadius = UDim.new(0, 10)
         NotifCorner.Parent = NotifFrame
-
+        
         local NotifStroke = Instance.new("UIStroke")
         NotifStroke.Color = Color3.fromRGB(140, 45, 220)
         NotifStroke.Thickness = 2
         NotifStroke.Parent = NotifFrame
-
+        
         local NotifProfile = Instance.new("ImageLabel")
         NotifProfile.Size = UDim2.new(0, 60, 0, 60)
         NotifProfile.Position = UDim2.new(0, 20, 0.5, -30)
         NotifProfile.BackgroundColor3 = Color3.fromRGB(45, 25, 70)
         NotifProfile.Image = Players:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
         NotifProfile.Parent = NotifFrame
-
+        
         local NotifProfileCorner = Instance.new("UICorner")
         NotifProfileCorner.CornerRadius = UDim.new(1, 0)
         NotifProfileCorner.Parent = NotifProfile
-
+        
         local NotifProfileStroke = Instance.new("UIStroke")
         NotifProfileStroke.Color = Color3.fromRGB(255, 215, 0)
         NotifProfileStroke.Thickness = 2
         NotifProfileStroke.Parent = NotifProfile
-
+        
         local CrownLabel = Instance.new("TextLabel")
         CrownLabel.Size = UDim2.new(1, -100, 0, 20)
         CrownLabel.Position = UDim2.new(0, 90, 0, 0)
@@ -350,7 +304,7 @@ local function PopulateAdminPage(page)
         CrownLabel.TextSize = 14
         CrownLabel.TextXAlignment = Enum.TextXAlignment.Left
         CrownLabel.Parent = NotifFrame
-
+        
         local NotifMsg = Instance.new("TextLabel")
         NotifMsg.Size = UDim2.new(1, -100, 1, -25)
         NotifMsg.Position = UDim2.new(0, 90, 0, 20)
@@ -362,16 +316,16 @@ local function PopulateAdminPage(page)
         NotifMsg.TextXAlignment = Enum.TextXAlignment.Left
         NotifMsg.TextYAlignment = Enum.TextYAlignment.Top
         NotifMsg.Parent = NotifFrame
-
+        
         TweenService:Create(NotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Position = UDim2.new(0.5, -250, 0, 50)}):Play()
-
+        
         task.delay(3, function()
             TweenService:Create(NotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(0.5, -250, 0, -150)}):Play()
             task.wait(0.5)
             NotifGui:Destroy()
         end)
     end)
-
+    
     local OwnerScriptYPos = 150
     local OwnerScriptFrame = Instance.new("Frame")
     OwnerScriptFrame.Size = UDim2.new(1, -20, 0, 40)
@@ -379,11 +333,11 @@ local function PopulateAdminPage(page)
     OwnerScriptFrame.BackgroundColor3 = Color3.fromRGB(35, 20, 55)
     OwnerScriptFrame.BorderSizePixel = 0
     OwnerScriptFrame.Parent = page
-
+    
     local OwnerScriptCorner = Instance.new("UICorner")
     OwnerScriptCorner.CornerRadius = UDim.new(0, 8)
     OwnerScriptCorner.Parent = OwnerScriptFrame
-
+    
     local OwnerTextLabel = Instance.new("TextLabel")
     OwnerTextLabel.Size = UDim2.new(0, 150, 1, 0)
     OwnerTextLabel.Position = UDim2.new(0, 10, 0, 0)
@@ -394,36 +348,36 @@ local function PopulateAdminPage(page)
     OwnerTextLabel.TextSize = 14
     OwnerTextLabel.TextXAlignment = Enum.TextXAlignment.Left
     OwnerTextLabel.Parent = OwnerScriptFrame
-
+    
     local ToggleBg = Instance.new("Frame")
     ToggleBg.Size = UDim2.new(0, 50, 0, 26)
     ToggleBg.Position = UDim2.new(1, -60, 0.5, -13)
     ToggleBg.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
     ToggleBg.Parent = OwnerScriptFrame
-
+    
     local ToggleCorner = Instance.new("UICorner")
     ToggleCorner.CornerRadius = UDim.new(1, 0)
     ToggleCorner.Parent = ToggleBg
-
+    
     local ToggleCircle = Instance.new("Frame")
     ToggleCircle.Size = UDim2.new(0, 20, 0, 20)
     ToggleCircle.Position = UDim2.new(0, 3, 0.5, -10)
     ToggleCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ToggleCircle.Parent = ToggleBg
-
+    
     local ToggleCircleCorner = Instance.new("UICorner")
     ToggleCircleCorner.CornerRadius = UDim.new(1, 0)
     ToggleCircleCorner.Parent = ToggleCircle
-
+    
     local isOwnerScriptEnabled = false
     local headBillboard = nil
     local rainbowConnection = nil
-
+    
     local function ApplyBillboard(character)
         if headBillboard then headBillboard:Destroy() end
         if rainbowConnection then rainbowConnection:Disconnect() end
         if not character or not character:FindFirstChild("Head") then return end
-
+        
         headBillboard = Instance.new("BillboardGui")
         headBillboard.Name = "OwnerScriptBillboard"
         headBillboard.Adornee = character.Head
@@ -431,7 +385,7 @@ local function PopulateAdminPage(page)
         headBillboard.StudsOffset = Vector3.new(0, 2.5, 0)
         headBillboard.AlwaysOnTop = true
         headBillboard.Parent = character.Head
-
+        
         local ownerText = Instance.new("TextLabel")
         ownerText.Name = "OwnerText"
         ownerText.Size = UDim2.new(1, 0, 1, 0)
@@ -439,12 +393,12 @@ local function PopulateAdminPage(page)
         ownerText.Font = Enum.Font.GothamBold
         ownerText.TextSize = 24
         ownerText.Parent = headBillboard
-
+        
         local textStroke = Instance.new("UIStroke")
         textStroke.Color = Color3.fromRGB(0, 0, 0)
         textStroke.Thickness = 3
         textStroke.Parent = ownerText
-
+        
         if LocalPlayer.Name == "Yanzzz_1023" then
             ownerText.Text = "👑OWNER👑"
             ownerText.TextColor3 = Color3.fromRGB(255, 220, 0)
@@ -459,13 +413,13 @@ local function PopulateAdminPage(page)
             ownerText.TextColor3 = Color3.fromRGB(200, 100, 255)
         end
     end
-
+    
     local OwnerScriptBtn = Instance.new("TextButton")
     OwnerScriptBtn.Size = UDim2.new(1, 0, 1, 0)
     OwnerScriptBtn.BackgroundTransparency = 1
     OwnerScriptBtn.Text = ""
     OwnerScriptBtn.Parent = OwnerScriptFrame
-
+    
     OwnerScriptBtn.MouseButton1Click:Connect(function()
         isOwnerScriptEnabled = not isOwnerScriptEnabled
         if isOwnerScriptEnabled then
@@ -487,7 +441,7 @@ local function PopulateAdminPage(page)
             end
         end
     end)
-
+    
     LocalPlayer.CharacterAdded:Connect(function(char)
         if isOwnerScriptEnabled then
             char:WaitForChild("Head")
@@ -506,7 +460,6 @@ local function updatePlayerStatusToPremium()
         StatusLabelRef.Text = "PREMIUM"
         StatusLabelRef.TextColor3 = Color3.fromRGB(255, 215, 0)
     end
-    
     if not AdminPageInstance then
         AdminPageInstance = CreateTab("ADMIN", 8)
         PopulateAdminPage(AdminPageInstance)
@@ -635,7 +588,6 @@ SendBtn.MouseButton1Click:Connect(function()
     end
     
     local code = string.upper(CodeInput.Text)
-    
     if usedCodes[code] == true then
         ResultLabel.Text = "CODE ALREADY USED"
         ResultLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
@@ -653,15 +605,14 @@ SendBtn.MouseButton1Click:Connect(function()
     if isValid then
         isPremium = true
         isAdmin = true
-        pcall(function() writefile(SaveFile, "PREMIUM") end)
-        
+        pcall(function()
+            writefile(SaveFile, "PREMIUM")
+        end)
         usedCodes[code] = true
         SaveUsedCodes()
-        
         ResultLabel.Text = "SUCCESS! Account is now PREMIUM."
         ResultLabel.TextColor3 = Color3.fromRGB(100, 255, 100)
         CodeInput.Text = ""
-        
         updatePlayerStatusToPremium()
     else
         ResultLabel.Text = "Invalid Code!"
@@ -786,16 +737,16 @@ local function CreateStatBox(order, hasIcon)
     Box.BorderSizePixel = 0
     Box.LayoutOrder = order
     Box.Parent = StatsContainer
-
+    
     local BoxCorner = Instance.new("UICorner")
     BoxCorner.CornerRadius = UDim.new(0, 6)
     BoxCorner.Parent = Box
-
+    
     local BoxStroke = Instance.new("UIStroke")
     BoxStroke.Color = Color3.fromRGB(100, 40, 160)
     BoxStroke.Thickness = 1
     BoxStroke.Parent = Box
-
+    
     local Icon = nil
     if hasIcon then
         Icon = Instance.new("ImageLabel")
@@ -805,7 +756,7 @@ local function CreateStatBox(order, hasIcon)
         Icon.ScaleType = Enum.ScaleType.Fit
         Icon.Parent = Box
     end
-
+    
     local Label = Instance.new("TextLabel")
     Label.Size = hasIcon and UDim2.new(1, -38, 1, 0) or UDim2.new(1, -20, 1, 0)
     Label.Position = hasIcon and UDim2.new(0, 32, 0, 0) or UDim2.new(0, 10, 0, 0)
@@ -815,14 +766,13 @@ local function CreateStatBox(order, hasIcon)
     Label.TextSize = 11
     Label.TextXAlignment = Enum.TextXAlignment.Left
     Label.Parent = Box
-
+    
     return Label, Icon
 end
 
 local StatusLabel, StatusIcon = CreateStatBox(1, true)
 StatusLabelRef = StatusLabel
 StatusIcon.Image = "rbxassetid://95842412229310"
-
 if isPremium then
     StatusLabel.Text = "PREMIUM"
     StatusLabel.TextColor3 = Color3.fromRGB(255, 215, 0)
@@ -933,16 +883,16 @@ for index, data in ipairs(ScriptList) do
     ItemFrame.BorderSizePixel = 0
     ItemFrame.LayoutOrder = index
     ItemFrame.Parent = ScriptScroll
-
+    
     local ItemCorner = Instance.new("UICorner")
     ItemCorner.CornerRadius = UDim.new(0, 6)
     ItemCorner.Parent = ItemFrame
-
+    
     local ItemStroke = Instance.new("UIStroke")
     ItemStroke.Color = Color3.fromRGB(70, 40, 110)
     ItemStroke.Thickness = 1
     ItemStroke.Parent = ItemFrame
-
+    
     local NameLabel = Instance.new("TextLabel")
     NameLabel.Size = UDim2.new(1, -80, 0, 20)
     NameLabel.Position = UDim2.new(0, 10, 0, 4)
@@ -953,7 +903,7 @@ for index, data in ipairs(ScriptList) do
     NameLabel.TextSize = 12
     NameLabel.TextXAlignment = Enum.TextXAlignment.Left
     NameLabel.Parent = ItemFrame
-
+    
     local KeyStatusLabel = Instance.new("TextLabel")
     KeyStatusLabel.Size = UDim2.new(1, -80, 0, 14)
     KeyStatusLabel.Position = UDim2.new(0, 10, 0, 22)
@@ -964,22 +914,22 @@ for index, data in ipairs(ScriptList) do
     KeyStatusLabel.TextSize = 10
     KeyStatusLabel.TextXAlignment = Enum.TextXAlignment.Left
     KeyStatusLabel.Parent = ItemFrame
-
+    
     local CheckBox = Instance.new("Frame")
     CheckBox.Size = UDim2.new(0, 22, 0, 22)
     CheckBox.Position = UDim2.new(1, -30, 0.5, -11)
     CheckBox.BackgroundColor3 = Color3.fromRGB(20, 12, 32)
     CheckBox.Parent = ItemFrame
-
+    
     local CheckCorner = Instance.new("UICorner")
     CheckCorner.CornerRadius = UDim.new(0, 4)
     CheckCorner.Parent = CheckBox
-
+    
     local CheckStroke = Instance.new("UIStroke")
     CheckStroke.Color = Color3.fromRGB(120, 60, 180)
     CheckStroke.Thickness = 1
     CheckStroke.Parent = CheckBox
-
+    
     local CheckMark = Instance.new("TextLabel")
     CheckMark.Size = UDim2.new(1, 0, 1, 0)
     CheckMark.BackgroundTransparency = 1
@@ -988,15 +938,15 @@ for index, data in ipairs(ScriptList) do
     CheckMark.Font = Enum.Font.GothamBold
     CheckMark.TextSize = 14
     CheckMark.Parent = CheckBox
-
+    
     local ClickBtn = Instance.new("TextButton")
     ClickBtn.Size = UDim2.new(1, 0, 1, 0)
     ClickBtn.BackgroundTransparency = 1
     ClickBtn.Text = ""
     ClickBtn.Parent = ItemFrame
-
+    
     RegisteredItems[index] = {ItemFrame = ItemFrame, NameLabel = NameLabel, CheckMark = CheckMark, Stroke = ItemStroke, Data = data}
-
+    
     ClickBtn.MouseButton1Click:Connect(function()
         selectedScript = data.Script
         for _, item in pairs(RegisteredItems) do
@@ -1060,11 +1010,11 @@ local function CreateToggle(name, order, onClick)
     Frame.BorderSizePixel = 0
     Frame.LayoutOrder = order
     Frame.Parent = DisplayScroll
-
+    
     local Corner = Instance.new("UICorner")
     Corner.CornerRadius = UDim.new(0, 8)
     Corner.Parent = Frame
-
+    
     local Label = Instance.new("TextLabel")
     Label.Size = UDim2.new(0.6, 0, 1, 0)
     Label.Position = UDim2.new(0, 12, 0, 0)
@@ -1075,33 +1025,33 @@ local function CreateToggle(name, order, onClick)
     Label.TextSize = 12
     Label.TextXAlignment = Enum.TextXAlignment.Left
     Label.Parent = Frame
-
+    
     local ToggleBg = Instance.new("Frame")
     ToggleBg.Size = UDim2.new(0, 46, 0, 24)
     ToggleBg.Position = UDim2.new(1, -56, 0.5, -12)
     ToggleBg.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
     ToggleBg.Parent = Frame
-
+    
     local ToggleCorner = Instance.new("UICorner")
     ToggleCorner.CornerRadius = UDim.new(1, 0)
     ToggleCorner.Parent = ToggleBg
-
+    
     local ToggleCircle = Instance.new("Frame")
     ToggleCircle.Size = UDim2.new(0, 18, 0, 18)
     ToggleCircle.Position = UDim2.new(0, 3, 0.5, -9)
     ToggleCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ToggleCircle.Parent = ToggleBg
-
+    
     local CircleCorner = Instance.new("UICorner")
     CircleCorner.CornerRadius = UDim.new(1, 0)
     CircleCorner.Parent = ToggleCircle
-
+    
     local Btn = Instance.new("TextButton")
     Btn.Size = UDim2.new(1, 0, 1, 0)
     Btn.BackgroundTransparency = 1
     Btn.Text = ""
     Btn.Parent = Frame
-
+    
     local state = false
     Btn.MouseButton1Click:Connect(function()
         state = not state
@@ -1185,14 +1135,17 @@ KnobCorner.CornerRadius = UDim.new(1, 0)
 KnobCorner.Parent = SliderKnob
 
 local isDraggingZoom = false
+
 local function UpdateZoom(input)
     local barPos = SliderBar.AbsolutePosition.X
     local barSize = SliderBar.AbsoluteSize.X
     local mouseX = input.Position.X
     local percentage = math.clamp((mouseX - barPos) / barSize, 0, 1)
+    
     SliderFill.Size = UDim2.new(percentage, 0, 1, 0)
     local zoomPercent = math.floor(percentage * 50)
     SliderTitle.Text = "PC ZOOM DISTANCE: " .. zoomPercent .. "%"
+    
     LocalPlayer.CameraMaxZoomDistance = 128 + (zoomPercent * 4)
     LocalPlayer.CameraMinZoomDistance = 0.5
 end
@@ -1346,11 +1299,12 @@ local function CreateMainCountdownLabel(name, color, order)
     label.TextSize = 14
     label.TextXAlignment = Enum.TextXAlignment.Left
     label.Parent = MainCountdownFrame
-
+    
     local stroke = Instance.new("UIStroke")
     stroke.Color = Color3.fromRGB(0, 0, 0)
     stroke.Thickness = 1
     stroke.Parent = label
+    
     return label
 end
 
@@ -1381,11 +1335,11 @@ task.spawn(function()
         divineTime = math.max(0, divineTime - 1)
         eternalTime = math.max(0, eternalTime - 1)
         secretTime = math.max(0, secretTime - 1)
-
+        
         if divineTime == 0 then divineTime = math.random(3600, 14400) end
         if eternalTime == 0 then eternalTime = math.random(1800, 7200) end
         if secretTime == 0 then secretTime = math.random(600, 3600) end
-
+        
         if DivineCountdownLabel and DivineCountdownLabel.Parent then
             DivineCountdownLabel.Text = "DIVINE: " .. formatTimeHMS(divineTime)
         end
@@ -1430,16 +1384,16 @@ local function CreateEggPredictionBox(eggName, rarity, color, order)
     Frame.BorderSizePixel = 0
     Frame.LayoutOrder = order
     Frame.Parent = EggListFrame
-
+    
     local Corner = Instance.new("UICorner")
     Corner.CornerRadius = UDim.new(0, 6)
     Corner.Parent = Frame
-
+    
     local Stroke = Instance.new("UIStroke")
     Stroke.Color = color
     Stroke.Thickness = 1
     Stroke.Parent = Frame
-
+    
     local NameLabel = Instance.new("TextLabel")
     NameLabel.Size = UDim2.new(0.65, 0, 1, 0)
     NameLabel.Position = UDim2.new(0, 10, 0, 0)
@@ -1450,7 +1404,7 @@ local function CreateEggPredictionBox(eggName, rarity, color, order)
     NameLabel.TextSize = 11
     NameLabel.TextXAlignment = Enum.TextXAlignment.Left
     NameLabel.Parent = Frame
-
+    
     local TimeLabel = Instance.new("TextLabel")
     TimeLabel.Size = UDim2.new(0.35, -10, 1, 0)
     TimeLabel.Position = UDim2.new(0.65, 10, 0, 0)
@@ -1461,13 +1415,21 @@ local function CreateEggPredictionBox(eggName, rarity, color, order)
     TimeLabel.TextSize = 11
     TimeLabel.TextXAlignment = Enum.TextXAlignment.Right
     TimeLabel.Parent = Frame
-
+    
     return TimeLabel
 end
 
-local divineEggs = { "Unicorn Egg", "Kitsune Egg", "Nightflame Egg", "Archangel Egg", "WorldBurner Egg", "Aetheron Egg", "Royal Sky Whale Egg" }
-local eternalEggs = { "Ice Dragon Egg", "Phoenix Egg", "Lava Dragon Egg", "Mosasaurus Egg", "Eternal Moon Dragon Egg", "Oni Tiger Egg", "Gorilla King Egg", "Pegasus Egg", "Skeleton Horse Egg", "Equinox Egg", "El Maja Egg", "World Eater Egg", "Destroyer Dragon Egg", "Void Snake Egg" }
-local secretEggs = { "Yeti Egg", "Cerberus Egg", "T-Rex Egg", "Tralaledon Egg", "Cosmic Skeleton Boss Egg", "Cosmic Dragon Egg", "Pure Jellyfish Egg", "Gargoyle Egg", "Centaur Egg", "RazorFang Egg", "Mutant Shark Egg", "Male Deer Egg", "Kraken Egg", "King Snake Egg", "Wendigo Egg", "Mouth Breaker Egg", "Broken Wing Egg" }
+local divineEggs = {
+    "Unicorn Egg", "Kitsune Egg", "Nightflame Egg", "Archangel Egg", "WorldBurner Egg", "Aetheron Egg", "Royal Sky Whale Egg"
+}
+
+local eternalEggs = {
+    "Ice Dragon Egg", "Phoenix Egg", "Lava Dragon Egg", "Mosasaurus Egg", "Eternal Moon Dragon Egg", "Oni Tiger Egg", "Gorilla King Egg", "Pegasus Egg", "Skeleton Horse Egg", "Equinox Egg", "El Maja Egg", "World Eater Egg", "Destroyer Dragon Egg", "Void Snake Egg"
+}
+
+local secretEggs = {
+    "Yeti Egg", "Cerberus Egg", "T-Rex Egg", "Tralaledon Egg", "Cosmic Skeleton Boss Egg", "Cosmic Dragon Egg", "Pure Jellyfish Egg", "Gargoyle Egg", "Centaur Egg", "RazorFang Egg", "Mutant Shark Egg", "Male Deer Egg", "Kraken Egg", "King Snake Egg", "Wendigo Egg", "Mouth Breaker Egg", "Broken Wing Egg"
+}
 
 local eggTimeData = {}
 local orderCounter = 1
@@ -1603,14 +1565,12 @@ task.spawn(function()
             local now = os.date("*t")
             local isSaturday = (now.wday == 7)
             local currentSecondsToday = (now.hour * 3600) + (now.min * 60) + now.sec
-            
             local startSeconds = 22 * 3600
             local endSeconds = 23 * 3600 + 30 * 60
             
             if isSaturday and currentSecondsToday >= startSeconds and currentSecondsToday < endSeconds then
                 AAStatusText.Text = "🎃 HALLOWEEN EGG STEALING EVENT 🎃"
                 AAStatusText.TextColor3 = Color3.fromRGB(255, 140, 0)
-                
                 local isBlinkOn = math.floor(tick() * 3) % 2 == 0
                 AAStatusText.TextTransparency = isBlinkOn and 0 or 0.7
                 AAStatusStroke.Thickness = isBlinkOn and 3 or 1
@@ -1618,24 +1578,14 @@ task.spawn(function()
             else
                 AAStatusText.TextTransparency = 0
                 AAStatusStroke.Thickness = 0
-                
                 local daysUntilSaturday = (7 - now.wday) % 7
                 if daysUntilSaturday == 0 and currentSecondsToday >= startSeconds then
                     daysUntilSaturday = 7
                 end
-                
-                local target = {
-                    year = now.year,
-                    month = now.month,
-                    day = now.day + daysUntilSaturday,
-                    hour = 22,
-                    min = 0,
-                    sec = 0
-                }
+                local target = {year = now.year, month = now.month, day = now.day + daysUntilSaturday, hour = 22, min = 0, sec = 0}
                 local targetTime = os.time(target)
                 local nowTime = os.time()
                 local diff = math.max(0, targetTime - nowTime)
-                
                 local days = math.floor(diff / 86400)
                 local hours = math.floor((diff % 86400) / 3600)
                 local minutes = math.floor((diff % 3600) / 60)
@@ -1696,7 +1646,7 @@ ListTitleStroke.Parent = ListTitle
 local ServerLabel = Instance.new("TextLabel")
 ServerLabel.Size = UDim2.new(1, 0, 0, 25)
 ServerLabel.BackgroundTransparency = 1
-ServerLabel.Text = "🇮🇩 INDONESIAN SERVER 🇮🇩"
+ServerLabel.Text = "🌐 GLOBAL SERVER 🌐"
 ServerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 ServerLabel.Font = Enum.Font.GothamBold
 ServerLabel.TextSize = 14
@@ -1747,16 +1697,16 @@ local function LoadDivineList()
                 Box.BorderSizePixel = 0
                 Box.LayoutOrder = item.Order
                 Box.Parent = ListFrame
-
+                
                 local BoxCorner = Instance.new("UICorner")
                 BoxCorner.CornerRadius = UDim.new(0, 6)
                 BoxCorner.Parent = Box
-
+                
                 local BoxStroke = Instance.new("UIStroke")
                 BoxStroke.Color = Color3.fromRGB(140, 45, 220)
                 BoxStroke.Thickness = 1
                 BoxStroke.Parent = Box
-
+                
                 local InfoLabel = Instance.new("TextLabel")
                 InfoLabel.Size = UDim2.new(1, -20, 1, 0)
                 InfoLabel.Position = UDim2.new(0, 10, 0, 0)
@@ -1778,27 +1728,27 @@ local function AddToDivineList(eggName, area, timeStr)
             return
         end
     end
-
+    
     local newItem = {Egg = eggName, Area = area, Time = timeStr, Order = #DivineSpawnData + 1}
     table.insert(DivineSpawnData, newItem)
     SaveDivineList()
-
+    
     local Box = Instance.new("Frame")
     Box.Size = UDim2.new(1, 0, 0, 35)
     Box.BackgroundColor3 = Color3.fromRGB(35, 20, 55)
     Box.BorderSizePixel = 0
     Box.LayoutOrder = newItem.Order
     Box.Parent = ListFrame
-
+    
     local BoxCorner = Instance.new("UICorner")
     BoxCorner.CornerRadius = UDim.new(0, 6)
     BoxCorner.Parent = Box
-
+    
     local BoxStroke = Instance.new("UIStroke")
     BoxStroke.Color = Color3.fromRGB(140, 45, 220)
     BoxStroke.Thickness = 1
     BoxStroke.Parent = Box
-
+    
     local InfoLabel = Instance.new("TextLabel")
     InfoLabel.Size = UDim2.new(1, -20, 1, 0)
     InfoLabel.Position = UDim2.new(0, 10, 0, 0)
@@ -1809,7 +1759,7 @@ local function AddToDivineList(eggName, area, timeStr)
     InfoLabel.TextSize = 12
     InfoLabel.TextXAlignment = Enum.TextXAlignment.Left
     InfoLabel.Parent = Box
-
+    
     Box.Position = UDim2.new(0, 0, 0, -10)
     TweenService:Create(Box, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Position = UDim2.new(0, 0, 0, 0)}):Play()
 end
@@ -1847,140 +1797,6 @@ task.spawn(function()
                 if child:IsA("Frame") then
                     child:Destroy()
                 end
-            end
-        end
-    end
-end)
-
-task.spawn(function()
-    local lastNotifMinute = -1
-    while task.wait(1) do
-        local now = os.date("*t")
-        local wday = now.wday
-        local hour = now.hour
-        local min = now.min
-        local sec = now.sec
-        
-        local isSaturdayEvent = (wday == 7 and hour == 21 and min >= 30) or (wday == 7 and hour == 22 and min <= 30)
-        local isTuesdayEvent = (wday == 3 and hour == 19 and min == 30 and LocalPlayer.Name == "LifzxAfter2")
-        
-        if (isSaturdayEvent or isTuesdayEvent) and sec == 0 and min ~= lastNotifMinute then
-            lastNotifMinute = min
-            
-            local messageText = ""
-            if wday == 7 then
-                if hour == 21 and min == 30 then
-                    messageText = "Admin Abuse😍 My Owner And Moderator Hi."
-                elseif hour == 22 and min == 0 then
-                    messageText = "Go 22:00 Admin Starts?"
-                elseif hour == 22 and min == 30 then
-                    messageText = "L or W?"
-                else
-                    messageText = "Admin Abuse Event Ongoing!"
-                end
-            elseif wday == 3 then
-                messageText = "Hi."
-            end
-            
-            if messageText ~= "" then
-                local AutoNotifGui = Instance.new("ScreenGui")
-                AutoNotifGui.Name = "LipzyAutoNotification"
-                AutoNotifGui.Parent = game.CoreGui
-                AutoNotifGui.IgnoreGuiInset = true
-
-                local AutoNotifFrame = Instance.new("Frame")
-                AutoNotifFrame.Size = UDim2.new(0, 400, 0, 170)
-                AutoNotifFrame.Position = UDim2.new(0.5, -200, 0, -200)
-                AutoNotifFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-                AutoNotifFrame.BorderSizePixel = 0
-                AutoNotifFrame.Parent = AutoNotifGui
-
-                local NotifCorner = Instance.new("UICorner")
-                NotifCorner.CornerRadius = UDim.new(0, 10)
-                NotifCorner.Parent = AutoNotifFrame
-
-                local NotifStroke = Instance.new("UIStroke")
-                NotifStroke.Color = Color3.fromRGB(140, 45, 220)
-                NotifStroke.Thickness = 2
-                NotifStroke.Parent = AutoNotifFrame
-
-                local BannerImg = Instance.new("ImageLabel")
-                BannerImg.Size = UDim2.new(0, 50, 0, 50)
-                BannerImg.Position = UDim2.new(0, 15, 0, 15)
-                BannerImg.BackgroundTransparency = 1
-                BannerImg.Image = "rbxassetid://107445714588354"
-                BannerImg.Parent = AutoNotifFrame
-
-                local BannerCorner = Instance.new("UICorner")
-                BannerCorner.CornerRadius = UDim.new(1, 0)
-                BannerCorner.Parent = BannerImg
-
-                local BrandLabel = Instance.new("TextLabel")
-                BrandLabel.Size = UDim2.new(1, -80, 0, 30)
-                BrandLabel.Position = UDim2.new(0, 75, 0, 12)
-                BrandLabel.BackgroundTransparency = 1
-                BrandLabel.Text = "LIPZY X ZALZ"
-                BrandLabel.Font = Enum.Font.GothamBold
-                BrandLabel.TextSize = 18
-                BrandLabel.TextXAlignment = Enum.TextXAlignment.Left
-                BrandLabel.Parent = AutoNotifFrame
-
-                local BrandStroke = Instance.new("UIStroke")
-                BrandStroke.Color = Color3.fromRGB(0, 0, 0)
-                BrandStroke.Thickness = 2
-                BrandStroke.Parent = BrandLabel
-
-                task.spawn(function()
-                    while BrandLabel and BrandLabel.Parent do
-                        local h = (tick() % 4) / 4
-                        BrandLabel.TextColor3 = Color3.fromHSV(h, 1, 1)
-                        task.wait(0.1)
-                    end
-                end)
-
-                local RoleLabel = Instance.new("TextLabel")
-                RoleLabel.Size = UDim2.new(1, -80, 0, 20)
-                RoleLabel.Position = UDim2.new(0, 75, 0, 42)
-                RoleLabel.BackgroundTransparency = 1
-                RoleLabel.Text = "[OWNER AND MODERATOR]"
-                RoleLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-                RoleLabel.Font = Enum.Font.GothamBold
-                RoleLabel.TextSize = 11
-                RoleLabel.TextXAlignment = Enum.TextXAlignment.Left
-                RoleLabel.Parent = AutoNotifFrame
-
-                local RoleStroke = Instance.new("UIStroke")
-                RoleStroke.Color = Color3.fromRGB(0, 0, 0)
-                RoleStroke.Thickness = 2
-                RoleStroke.Parent = RoleLabel
-
-                local MsgLabel = Instance.new("TextLabel")
-                MsgLabel.Size = UDim2.new(1, -30, 0, 85)
-                MsgLabel.Position = UDim2.new(0, 15, 0, 75)
-                MsgLabel.BackgroundTransparency = 1
-                MsgLabel.Text = "Message : " .. messageText
-                MsgLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
-                MsgLabel.Font = Enum.Font.GothamBold
-                MsgLabel.TextSize = 13
-                MsgLabel.TextXAlignment = Enum.TextXAlignment.Left
-                MsgLabel.TextYAlignment = Enum.TextYAlignment.Top
-                MsgLabel.TextWrapped = true
-                MsgLabel.Parent = AutoNotifFrame
-
-                local MsgStroke = Instance.new("UIStroke")
-                MsgStroke.Color = Color3.fromRGB(0, 0, 0)
-                MsgStroke.Thickness = 2
-                MsgStroke.Parent = MsgLabel
-
-                TweenService:Create(AutoNotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Position = UDim2.new(0.5, -200, 0, 40)}):Play()
-
-                task.delay(4, function()
-                    if AutoNotifFrame and AutoNotifFrame.Parent then
-                        TweenService:Create(AutoNotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {Position = UDim2.new(0.5, -200, 0, -200)}):Play()
-                        task.wait(0.5)
-                        AutoNotifGui:Destroy()
-                    end
-                end)
             end
         end
     end
