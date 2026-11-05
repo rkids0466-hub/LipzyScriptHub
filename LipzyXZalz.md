@@ -453,7 +453,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     notifRow.AutomaticSize = Enum.AutomaticSize.X
     notifRow.ClipsDescendants = true
     notifRow.LayoutOrder = globalOrder
-    notifRow.Parent = containerFrame
+    notifRow.Parent = containerFrame  -- <-- PERBAIKAN DI SINI (Hanya sekali, tidak dobel)
 
     local colLayout = Instance.new("UIListLayout")
     colLayout.FillDirection = Enum.FillDirection.Vertical
@@ -461,7 +461,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     colLayout.VerticalAlignment = Enum.VerticalAlignment.Center
     colLayout.SortOrder = Enum.SortOrder.LayoutOrder
     colLayout.Padding = UDim.new(0, -4)
-    notifRow.Parent = notifRow
+    colLayout.Parent = notifRow
 
     -- FIRST LINE
     local line1 = Instance.new("Frame")
