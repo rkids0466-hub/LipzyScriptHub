@@ -179,7 +179,7 @@ local btnHeadCorner = Instance.new("UICorner")
 btnHeadCorner.CornerRadius = UDim.new(0, 8)
 btnHeadCorner.Parent = startHeadButton
 
--- Grid Container for Feature Buttons (2 Columns)
+-- Grid Container for Feature Buttons (2 Columns - Admin, Banner & Spawns)
 local gridContainer = Instance.new("Frame")
 gridContainer.Size = UDim2.new(1, 0, 0, 0)
 gridContainer.BackgroundTransparency = 1
@@ -221,7 +221,7 @@ local btnSpawnSkyywhale = createFeatureButton("[ SPAWN SKYWHALE ]", Color3.fromR
 local btnSpawnWorldBurner = createFeatureButton("[ SPAWN WORLDBURNER ]", Color3.fromRGB(220, 20, 100), 10)
 
 -- ==========================================================
--- FULL-WIDTH BUTTON HELPER (SAME AS START OVERHEAD)
+-- FULL-WIDTH SPECIAL FEATURE BUTTONS (LayoutOrder 8, 9, 10)
 -- ==========================================================
 local function createFullWidthButton(name, color, order)
     local btn = Instance.new("TextButton")
@@ -229,7 +229,7 @@ local function createFullWidthButton(name, color, order)
     btn.BackgroundColor3 = color
     btn.TextColor3 = Color3.fromRGB(255, 255, 255)
     btn.Text = name
-    btn.TextSize = 13
+    btn.TextSize = 12
     btn.Font = Enum.Font.GothamBold
     btn.LayoutOrder = order
     btn.Parent = scrollFrame
@@ -1025,7 +1025,6 @@ local function toggleEggPredictionPanel()
         return
     end
 
-    -- Fixed Size: Width 390, Height 200
     eggPredictionGui = Instance.new("Frame")
     eggPredictionGui.Name = "EggPredictionWindow"
     eggPredictionGui.Size = UDim2.new(0, 390, 0, 200)
@@ -1041,7 +1040,6 @@ local function toggleEggPredictionPanel()
     epCorner.CornerRadius = UDim.new(0, 12)
     epCorner.Parent = eggPredictionGui
 
-    -- Title Header (30px Height)
     local epTitle = Instance.new("TextLabel")
     epTitle.Size = UDim2.new(1, -40, 0, 30)
     epTitle.Position = UDim2.new(0, 12, 0, 0)
@@ -1081,7 +1079,6 @@ local function toggleEggPredictionPanel()
     epLine.BorderSizePixel = 0
     epLine.Parent = eggPredictionGui
 
-    -- Scroll Area (Height: 135px)
     local epScroll = Instance.new("ScrollingFrame")
     epScroll.Size = UDim2.new(1, 0, 0, 135)
     epScroll.Position = UDim2.new(0, 0, 0, 33)
@@ -1106,7 +1103,6 @@ local function toggleEggPredictionPanel()
     epLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     epLayout.Parent = epScroll
 
-    -- Bottom Stats Footer (Height: 30px)
     local statsFooter = Instance.new("Frame")
     statsFooter.Size = UDim2.new(1, 0, 0, 30)
     statsFooter.Position = UDim2.new(0, 0, 1, -30)
