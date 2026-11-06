@@ -264,7 +264,7 @@ local function spawnNotificationRow(senderName, messageText, isPlayer, customAva
 
     if isPlayer then
         avatarContent = getUserThumbnail()
-        senderName = player.DisplayName -- Menggunakan Nama Panggilan (Display Name) saja tanpa username asli
+        senderName = player.DisplayName
     end
 
     local notifRow = Instance.new("Frame")
@@ -457,7 +457,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
         avatarCorner.Parent = avatarImg
     end
 
-    local profileNameStr = player.DisplayName -- Menggunakan Nama Panggilan saja tanpa usn asli
+    local profileNameStr = player.DisplayName
 
     local nameLbl = Instance.new("TextLabel")
     nameLbl.Size = UDim2.new(0, 0, 1, 0)
@@ -588,7 +588,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     textLbl2.Size = UDim2.new(0, 0, 1, 0)
     textLbl2.BackgroundTransparency = 1
     textLbl2.AutomaticSize = Enum.AutomaticSize.X
-    textLbl2.Text = "hatched in"
+    textLbl2.Text = "spawned in" -- Diubah dari "hatched in" menjadi "spawned in"
     textLbl2.TextColor3 = Color3.fromRGB(255, 255, 255)
     textLbl2.TextSize = 16
     textLbl2.Font = Enum.Font.FredokaOne
