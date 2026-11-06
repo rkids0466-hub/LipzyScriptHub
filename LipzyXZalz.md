@@ -189,7 +189,7 @@ local function createFeatureButton(nama, warna, urutan)
 end
 
 local btnAdmin = createFeatureButton("[ ADMIN NOTIFICATION ]", Color3.fromRGB(200, 50, 50), 1)
-local btnLuckEggs = createFeatureButton("[ LUCK EGGS ]", Color3.fromRGB(255, 170, 0), 2) -- Teks diubah menjadi [ LUCK EGGS ]
+local btnLuckEggs = createFeatureButton("[ LUCK EGGS ]", Color3.fromRGB(255, 170, 0), 2)
 local btnCustomBanner = createFeatureButton("[ MEGA LUCKY FISH ]", Color3.fromRGB(138, 43, 226), 3)
 local btnOwnerGeme = createFeatureButton("[ GAME OWNER ]", Color3.fromRGB(46, 139, 87), 4)
 local btnSpawnUnicorn = createFeatureButton("[ SPAWN UNICORN ]", Color3.fromRGB(199, 21, 133), 5)
@@ -593,7 +593,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     textLbl2.TextSize = 16
     textLbl2.Font = Enum.Font.FredokaOne
     textLbl2.LayoutOrder = 3
-    textLbl2.Parent = textLbl2
+    textLbl2.Parent = line2 -- PERBAIKAN: Diubah dari textLbl2 ke line2
 
     local s6 = Instance.new("UIStroke")
     s6.Thickness = 1.8
