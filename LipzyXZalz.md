@@ -179,7 +179,7 @@ local function createFeatureButton(nama, warna, urutan)
     btn.Text = nama
     btn.TextSize = 11
     btn.Font = Enum.Font.GothamBold
-    btn.LayoutOrder = order
+    btn.LayoutOrder = urutan
     btn.Parent = gridContainer
     
     local c = Instance.new("UICorner")
@@ -207,7 +207,7 @@ local function createFullWidthButton(nama, warna, urutan)
     btn.Text = nama
     btn.TextSize = 12
     btn.Font = Enum.Font.GothamBold
-    btn.LayoutOrder = order
+    btn.LayoutOrder = urutan
     btn.Parent = scrollFrame
     
     local c = Instance.new("UICorner")
@@ -248,16 +248,22 @@ local function playCustomSound()
     end)
 end
 
+local function getUserThumbnail()
+    local success, result = pcall(function()
+        return Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+    end)
+    if success then
+        return result
+    end
+    return ""
+end
+
 local function spawnNotificationRow(senderName, messageText, isPlayer, customAvatar, isGlowingAdmin)
     globalOrder = globalOrder + 1
-
     local avatarContent = customAvatar
 
     if isPlayer then
-        local userId = player.UserId
-        local thumbType = Enum.ThumbnailType.HeadShot
-        local thumbSize = Enum.ThumbnailSize.Size420x420
-        avatarContent = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+        avatarContent = getUserThumbnail()
         senderName = player.DisplayName .. " (@" .. player.Name .. ")"
     end
 
@@ -397,16 +403,6 @@ local function spawnNotificationRow(senderName, messageText, isPlayer, customAva
             end)
         end
     end)
-end
-
-local function getUserThumbnail()
-    local success, result = pcall(function()
-        return Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-    end)
-    if success then
-        return result
-    end
-    return ""
 end
 
 local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
@@ -932,7 +928,7 @@ local function togglePlayerStatusPanel()
                     end
                 end
 
-                if distLabel then distLabel.Text = distanceStr
+                if distLabel then distLabel.Text = distanceStr end
                 if statLabel then
                     statLabel.Text = statusStr
                     statLabel.TextColor3 = statusColor
@@ -1586,7 +1582,7 @@ sendButton.MouseButton1Click:Connect(function()
     local text = textBox.Text
     if text == "" then text = "sementara itu bersiaplah untuk beberapa telur" end
     
-    spawnNotificationRow("Lifzy", text, true, nil, false)
+    spawnNotificationRow(player.DisplayName, text, true, nil, false)
     textBox.Text = ""
 end)
 
