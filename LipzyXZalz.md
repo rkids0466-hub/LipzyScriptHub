@@ -32,7 +32,7 @@ local titleLabel = Instance.new("TextLabel")
 titleLabel.Size = UDim2.new(1, 0, 0, 40)
 titleLabel.Position = UDim2.new(0, 0, 0, 0)
 titleLabel.BackgroundTransparency = 1
-titleLabel.Text = "Curi Telur - Panel"
+titleLabel.Text = "Steal An Egg - Panel"
 titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 titleLabel.TextSize = 16
 titleLabel.Font = Enum.Font.GothamBold
@@ -73,7 +73,7 @@ local textBox = Instance.new("TextBox")
 textBox.Size = UDim2.new(1, 0, 0, 35)
 textBox.BackgroundColor3 = Color3.fromRGB(45, 45, 65)
 textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-textBox.PlaceholderText = "Ketik pesan di sini..."
+textBox.PlaceholderText = "Type message here..."
 textBox.Text = ""
 textBox.TextSize = 13
 textBox.Font = Enum.Font.Gotham
@@ -89,7 +89,7 @@ local sendButton = Instance.new("TextButton")
 sendButton.Size = UDim2.new(1, 0, 0, 32)
 sendButton.BackgroundColor3 = Color3.fromRGB(0, 162, 255)
 sendButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-sendButton.Text = "KIRIM PESAN"
+sendButton.Text = "SEND MESSAGE"
 sendButton.TextSize = 13
 sendButton.Font = Enum.Font.GothamBold
 sendButton.LayoutOrder = 2
@@ -103,7 +103,7 @@ local textBoxServer = Instance.new("TextBox")
 textBoxServer.Size = UDim2.new(1, 0, 0, 35)
 textBoxServer.BackgroundColor3 = Color3.fromRGB(45, 45, 65)
 textBoxServer.TextColor3 = Color3.fromRGB(255, 255, 255)
-textBoxServer.PlaceholderText = "Ketik pengumuman server..."
+textBoxServer.PlaceholderText = "Type server announcement..."
 textBoxServer.Text = ""
 textBoxServer.TextSize = 13
 textBoxServer.Font = Enum.Font.Gotham
@@ -119,7 +119,7 @@ local sendServerButton = Instance.new("TextButton")
 sendServerButton.Size = UDim2.new(1, 0, 0, 32)
 sendServerButton.BackgroundColor3 = Color3.fromRGB(255, 80, 0)
 sendServerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-sendServerButton.Text = "KIRIM SERVER"
+sendServerButton.Text = "SEND SERVER"
 sendServerButton.TextSize = 13
 sendServerButton.Font = Enum.Font.GothamBold
 sendServerButton.LayoutOrder = 4
@@ -133,7 +133,7 @@ local textBoxHead = Instance.new("TextBox")
 textBoxHead.Size = UDim2.new(1, 0, 0, 35)
 textBoxHead.BackgroundColor3 = Color3.fromRGB(45, 45, 65)
 textBoxHead.TextColor3 = Color3.fromRGB(255, 255, 255)
-textBoxHead.PlaceholderText = "Ketik teks di atas judul..."
+textBoxHead.PlaceholderText = "Type text above head..."
 textBoxHead.Text = ""
 textBoxHead.TextSize = 13
 textBoxHead.Font = Enum.Font.Gotham
@@ -149,7 +149,7 @@ local startHeadButton = Instance.new("TextButton")
 startHeadButton.Size = UDim2.new(1, 0, 0, 32)
 startHeadButton.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
 startHeadButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-startHeadButton.Text = "MULAI OVERHEAD"
+startHeadButton.Text = "START OVERHEAD"
 startHeadButton.TextSize = 13
 startHeadButton.Font = Enum.Font.GothamBold
 startHeadButton.LayoutOrder = 6
@@ -188,10 +188,10 @@ local function createFeatureButton(nama, warna, urutan)
     return btn
 end
 
-local btnAdmin = createFeatureButton("[ NOTIFIKASI ADMIN ]", Color3.fromRGB(200, 50, 50), 1)
-local btnLuckEggs = createFeatureButton("[ TELUR KEBERUNTUNGAN ]", Color3.fromRGB(255, 170, 0), 2)
-local btnCustomBanner = createFeatureButton("[ IKAN MEGA BERUNTUNG ]", Color3.fromRGB(138, 43, 226), 3)
-local btnOwnerGeme = createFeatureButton("[ PEMILIK GAME ]", Color3.fromRGB(46, 139, 87), 4)
+local btnAdmin = createFeatureButton("[ ADMIN NOTIFICATION ]", Color3.fromRGB(200, 50, 50), 1)
+local btnLuckEggs = createFeatureButton("[ LUCK EGGS BANNER ]", Color3.fromRGB(255, 170, 0), 2)
+local btnCustomBanner = createFeatureButton("[ MEGA LUCKY FISH ]", Color3.fromRGB(138, 43, 226), 3)
+local btnOwnerGeme = createFeatureButton("[ GAME OWNER ]", Color3.fromRGB(46, 139, 87), 4)
 local btnSpawnUnicorn = createFeatureButton("[ SPAWN UNICORN ]", Color3.fromRGB(199, 21, 133), 5)
 local btnSpawnKitsune = createFeatureButton("[ SPAWN KITSUNE ]", Color3.fromRGB(255, 105, 180), 6)
 local btnSpawnNigflame = createFeatureButton("[ SPAWN NIGFLAME ]", Color3.fromRGB(180, 0, 0), 7)
@@ -216,9 +216,9 @@ local function createFullWidthButton(nama, warna, urutan)
     return btn
 end
 
-local btnChaosSky = createFullWidthButton("[ KEKACAUAN LANGIT ]", Color3.fromRGB(0, 220, 140), 8)
-local btnPlayerStatus = createFullWidthButton("[ STATUS PEMAIN ]", Color3.fromRGB(0, 150, 255), 9)
-local btnEggPrediction = createFullWidthButton("[ PREDIKSI TELUR ]", Color3.fromRGB(255, 100, 0), 10)
+local btnChaosSky = createFullWidthButton("[ SKY CHAOS ]", Color3.fromRGB(0, 220, 140), 8)
+local btnPlayerStatus = createFullWidthButton("[ PLAYER STATUS ]", Color3.fromRGB(0, 150, 255), 9)
+local btnEggPrediction = createFullWidthButton("[ EGG PREDICTION ]", Color3.fromRGB(255, 100, 0), 10)
 
 local containerFrame = Instance.new("Frame")
 containerFrame.Size = UDim2.new(0, 700, 0, 450)
@@ -264,7 +264,7 @@ local function spawnNotificationRow(senderName, messageText, isPlayer, customAva
 
     if isPlayer then
         avatarContent = getUserThumbnail()
-        senderName = player.DisplayName .. " (@" .. player.Name .. ")"
+        senderName = player.DisplayName -- Menggunakan Nama Panggilan (Display Name) saja tanpa username asli
     end
 
     local notifRow = Instance.new("Frame")
@@ -457,7 +457,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
         avatarCorner.Parent = avatarImg
     end
 
-    local profileNameStr = player.DisplayName .. " (@" .. player.Name .. ")"
+    local profileNameStr = player.DisplayName -- Menggunakan Nama Panggilan saja tanpa usn asli
 
     local nameLbl = Instance.new("TextLabel")
     nameLbl.Size = UDim2.new(0, 0, 1, 0)
@@ -486,7 +486,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     textLbl1.Size = UDim2.new(0, 0, 1, 0)
     textLbl1.BackgroundTransparency = 1
     textLbl1.AutomaticSize = Enum.AutomaticSize.X
-    textLbl1.Text = " memunculkan "
+    textLbl1.Text = " spawned a "
     textLbl1.TextColor3 = Color3.fromRGB(255, 255, 255)
     textLbl1.TextSize = 16
     textLbl1.Font = Enum.Font.FredokaOne
@@ -502,7 +502,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     rareEggLbl.Size = UDim2.new(0, 0, 1, 0)
     rareEggLbl.BackgroundTransparency = 1
     rareEggLbl.AutomaticSize = Enum.AutomaticSize.X
-    rareEggLbl.Text = "TELUR LANGKA"
+    rareEggLbl.Text = "RARE EGG"
     rareEggLbl.TextColor3 = Color3.fromRGB(255, 170, 0)
     rareEggLbl.TextSize = 17
     rareEggLbl.Font = Enum.Font.GothamBlack
@@ -572,7 +572,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     petLbl.Size = UDim2.new(0, 0, 1, 0)
     petLbl.BackgroundTransparency = 1
     petLbl.AutomaticSize = Enum.AutomaticSize.X
-    petLbl.Text = " Ilahi " .. petName
+    petLbl.Text = " Divine " .. petName
     petLbl.TextColor3 = petColor
     petLbl.TextSize = 17
     petLbl.Font = Enum.Font.GothamBlack
@@ -588,7 +588,7 @@ local function spawnCustomTemplate(petName, zoneName, petColor, zoneColor)
     textLbl2.Size = UDim2.new(0, 0, 1, 0)
     textLbl2.BackgroundTransparency = 1
     textLbl2.AutomaticSize = Enum.AutomaticSize.X
-    textLbl2.Text = "dihasilkan di"
+    textLbl2.Text = "hatched in"
     textLbl2.TextColor3 = Color3.fromRGB(255, 255, 255)
     textLbl2.TextSize = 16
     textLbl2.Font = Enum.Font.FredokaOne
@@ -659,7 +659,7 @@ local function spawnUnicornNotification()
 end
 
 local function spawnKitsuneNotification()
-    spawnCustomTemplate("Kitsune", "Bunga sakura🌸", Color3.fromRGB(255, 255, 0), Color3.fromRGB(255, 255, 0))
+    spawnCustomTemplate("Kitsune", "Cherry Blossom🌸", Color3.fromRGB(255, 255, 0), Color3.fromRGB(255, 255, 0))
 end
 
 local function spawnNigflameNotification()
@@ -765,7 +765,7 @@ local function togglePlayerStatusPanel()
     psTitle.Size = UDim2.new(1, -50, 0, 45)
     psTitle.Position = UDim2.new(0, 15, 0, 0)
     psTitle.BackgroundTransparency = 1
-    psTitle.Text = "🎮 PUSAT STATUS PEMAIN LANGSUNG"
+    psTitle.Text = "🎮 LIVE PLAYER STATUS HUB"
     psTitle.TextColor3 = Color3.fromRGB(0, 162, 255)
     psTitle.TextSize = 15
     psTitle.Font = Enum.Font.GothamBold
@@ -899,30 +899,30 @@ local function togglePlayerStatusPanel()
                 local distLabel = row:FindFirstChild("PDist")
                 local statLabel = row:FindFirstChild("PStat")
 
-                local distanceStr = "Jarak: Tidak Tersedia"
-                local statusStr = "Status: Tidak Aktif"
+                local distanceStr = "Distance: N/A"
+                local statusStr = "Status: Idle"
                 local statusColor = Color3.fromRGB(150, 150, 150)
 
                 local myChar = player.Character
                 local pChar = p.Character
                 if myChar and myChar:FindFirstChild("HumanoidRootPart") and pChar and pChar:FindFirstChild("HumanoidRootPart") then
                     local dist = (myChar.HumanoidRootPart.Position - pChar.HumanoidRootPart.Position).Magnitude
-                    distanceStr = string.format("Jarak: %.1f stud", dist)
+                    distanceStr = string.format("Distance: %.1f studs", dist)
 
                     local humanoid = pChar:FindFirstChildOfClass("Humanoid")
                     if humanoid then
                         local velocity = pChar.HumanoidRootPart.Velocity.Magnitude
                         if humanoid.Sit then
-                            statusStr = "Status: 🪑 Duduk / Peralatan"
+                            statusStr = "Status: 🪑 Sitting"
                             statusColor = Color3.fromRGB(255, 170, 0)
                         elseif velocity > 18 then
-                            statusStr = string.format("Status: 🏃 Berlari (Kecepatan: %.0f)", velocity)
+                            statusStr = string.format("Status: 🏃 Running (Speed: %.0f)", velocity)
                             statusColor = Color3.fromRGB(0, 255, 120)
                         elseif velocity > 2 then
-                            statusStr = "Status: 🚶 Berjalan"
+                            statusStr = "Status: 🚶 Walking"
                             statusColor = Color3.fromRGB(0, 200, 255)
                         else
-                            statusStr = "Status: 💤 Berdiri / Istirahat"
+                            statusStr = "Status: 💤 Standing / Resting"
                             statusColor = Color3.fromRGB(200, 100, 255)
                         end
                     end
@@ -958,10 +958,10 @@ local function formatTimeDetailed(totalSeconds)
     local seconds = math.floor(totalSeconds % 60)
 
     local parts = {}
-    if days > 0 then table.insert(parts, days .. " hari") end
-    if hours > 0 then table.insert(parts, hours .. " jam") end
-    if minutes > 0 then table.insert(parts, minutes .. " menit") end
-    table.insert(parts, seconds .. " seconds")
+    if days > 0 then table.insert(parts, days .. "d") end
+    if hours > 0 then table.insert(parts, hours .. "h") end
+    if minutes > 0 then table.insert(parts, minutes .. "m") end
+    table.insert(parts, seconds .. "s")
 
     return table.concat(parts, " ")
 end
@@ -996,7 +996,7 @@ local function toggleEggPredictionPanel()
     epTitle.Size = UDim2.new(1, -40, 0, 30)
     epTitle.Position = UDim2.new(0, 12, 0, 0)
     epTitle.BackgroundTransparency = 1
-    epTitle.Text = "🔮 PREDIKSI TELUR KERAJAAN"
+    epTitle.Text = "🔮 ROYAL EGG PREDICTION"
     epTitle.TextColor3 = Color3.fromRGB(255, 170, 0)
     epTitle.TextSize = 13
     epTitle.Font = Enum.Font.GothamBold
@@ -1073,7 +1073,7 @@ local function toggleEggPredictionPanel()
     statsLabel.Size = UDim2.new(1, -20, 1, 0)
     statsLabel.Position = UDim2.new(0, 10, 0, 0)
     statsLabel.BackgroundTransparency = 1
-    statsLabel.Text = "Perkiraan Jumlah Telur Min/Maksimum: 1 hingga 5 Telur | Tingkat Kemunculan Hewan Peliharaan: 50 hingga 250"
+    statsLabel.Text = "Est. Eggs Min/Max: 1 to 5 | Pet Spawn Rate: 50 to 250"
     statsLabel.TextColor3 = Color3.fromRGB(0, 220, 140)
     statsLabel.TextSize = 10
     statsLabel.Font = Enum.Font.GothamBold
@@ -1081,12 +1081,12 @@ local function toggleEggPredictionPanel()
     statsLabel.Parent = statsFooter
 
     local eggDataList = {
-        { name = "Telur Unicorn", id = "125379833514592" },
-        { name = "Telur Kitsune", id = "123193531109219" },
-        { name = "Telur Nigflame", id = "134338256117362" },
-        { name = "Telur Malaikat Agung", id = "94498866817720" },
-        { name = "Telur Pembakar Dunia", id = "127263885560222" },
-        { name = "Telur Paus Langit Kerajaan", id = "101480954663721" },
+        { name = "Unicorn Egg", id = "125379833514592" },
+        { name = "Kitsune Egg", id = "123193531109219" },
+        { name = "Nigflame Egg", id = "134338256117362" },
+        { name = "Archangel Egg", id = "94498866817720" },
+        { name = "World Burner Egg", id = "127263885560222" },
+        { name = "Royal Skywhale Egg", id = "101480954663721" },
     }
 
     if not _G.EggPredictionTimers then
@@ -1178,7 +1178,7 @@ local function toggleChaosOfTheSky()
     isChaosActive = not isChaosActive
     
     if isChaosActive then
-        spawnNotificationRow("SYSTEM", "MEGA AURORA BOREALIS AKTIF!", false, nil, true)
+        spawnNotificationRow("SYSTEM", "MEGA AURORA BOREALIS ACTIVE!", false, nil, true)
         
         chaosFolder = Instance.new("Folder")
         chaosFolder.Name = "ChaosSkyEffects"
@@ -1280,7 +1280,7 @@ local function toggleChaosOfTheSky()
             end
         end)
     else
-        spawnNotificationRow("SYSTEM", "CHAOS OF THE SKY DINONAKTIFKAN", false, nil, false)
+        spawnNotificationRow("SYSTEM", "SKY CHAOS DISABLED", false, nil, false)
         Lighting.ClockTime = 14
         Lighting.Brightness = 2
         if chaosFolder then
@@ -1307,7 +1307,7 @@ end
 
 local function showLuckEggsBanner()
     if isBlockedTime() then
-        spawnNotificationRow("SYSTEM", "TIDAK DAPAT DIGUNAKAN JIKA ADMIN DISALAHGUNAKAN", false, nil, true)
+        spawnNotificationRow("SYSTEM", "CANNOT BE USED IF ADMIN IS ABUSED", false, nil, true)
         return
     end
 
@@ -1425,7 +1425,7 @@ local function toggleOwnerGeme()
         local ownerText = Instance.new("TextLabel")
         ownerText.Size = UDim2.new(1, 0, 1, 0)
         ownerText.BackgroundTransparency = 1
-        ownerText.Text = "[PEMILIK]"
+        ownerText.Text = "[OWNER]"
         ownerText.TextColor3 = Color3.fromRGB(255, 0, 0)
         ownerText.TextSize = 26
         ownerText.Font = Enum.Font.GothamBlack
@@ -1580,7 +1580,7 @@ end
 sendButton.MouseButton1Click:Connect(function()
     playCustomSound()
     local text = textBox.Text
-    if text == "" then text = "sementara itu bersiaplah untuk beberapa telur" end
+    if text == "" then text = "meanwhile get ready for some eggs" end
     
     spawnNotificationRow(player.DisplayName, text, true, nil, false)
     textBox.Text = ""
@@ -1589,7 +1589,7 @@ end)
 sendServerButton.MouseButton1Click:Connect(function()
     playCustomSound()
     local text = textBoxServer.Text
-    if text == "" then text = "PENGUMUMAN SERVER UTAMA!" end
+    if text == "" then text = "MAIN SERVER ANNOUNCEMENT!" end
     
     triggerServerCinematic(text)
     textBoxServer.Text = ""
@@ -1598,7 +1598,7 @@ end)
 startHeadButton.MouseButton1Click:Connect(function()
     playCustomSound()
     local text = textBoxHead.Text
-    if text == "" then text = "Lifzy Hub" end
+    if text == "" then text = "Lipzy Hub" end
     
     triggerHeadText(text)
     textBoxHead.Text = ""
@@ -1606,7 +1606,7 @@ end)
 
 btnAdmin.MouseButton1Click:Connect(function()
     playCustomSound()
-    spawnNotificationRow("ADMIN", "APAKAH ANDA INGIN KEMENANGAN ATAS PENYALAHGUNAAN ADMIN?", false, nil, true)
+    spawnNotificationRow("ADMIN", "DO YOU WANT VICTORY OVER ADMIN ABUSE?", false, nil, true)
 end)
 
 btnLuckEggs.MouseButton1Click:Connect(function()
